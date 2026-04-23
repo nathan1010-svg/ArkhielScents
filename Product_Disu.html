@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ARKHIEL Scents | Product</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>  
+<header>
+    <h1>ARKHIEL Scents</h1>
+    <nav>
+        <a href="Home_Disu.html">Home</a>
+        <a href="Product_Disu.html">Product</a>
+        <a href="AboutUs_Disu.html">About Us</a>
+        <a href="ContactUs_Disu.html">Contact Us</a>
+    </nav>
+   
+    <button class="cart-btn" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+
+<div id="cartPanel" class="cart-panel">
+    <button class="close-cart" onclick="closeCart()">✖</button>
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <h3>Total: ₱<span id="cartTotal">0</span></h3>
+</div>
+    </header>
+
+    <main>
+<section class="product-section">
+    <h2>Our Perfume Products</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="noir.png" alt="ARKHIEL Noir" data-name="ARKHIEL Noir" data-desc="Dark and mysterious scent." data-price="₱500"> 
+            <h3>ARKHIEL Noir</h3>
+              <p>Dark and mysterious scent.</p>
+            <h4><strong>Price: ₱500</strong></h4>
+                    
+        </div>
+        <div class="product">
+            <img src="aura.png" alt="ARKHIEL Aura" data-name="ARKHIEL Aura" data-desc="Light and airy scent." data-price="₱500">
+            <h3>ARKHIEL Aura</h3>
+            <p>Light and airy scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+        <div class="product">
+            <img src="bloom.png" alt="ARKHIEL Bloom" data-name="ARKHIEL Bloom" data-desc="Floral and fresh scent." data-price="₱500">
+            <h3>ARKHIEL Bloom</h3>
+            <p>Floral and fresh scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+        <div class="product">
+            <img src="philia.png" alt="ARKHIEL Philia" data-name="ARKHIEL Philia" data-desc="Warm and comforting scent." data-price="₱500">
+            <h3>ARKHIEL Philia</h3>
+            <p>Warm and comforting scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+        <div class="product">
+            <img src="eros.png" alt="ARKHIEL Eros" data-name="ARKHIEL Eros" data-desc="Passionate and sensual scent." data-price="₱500">
+            <h3>ARKHIEL Eros</h3>
+            <p>Passionate and sensual scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+        <div class="product">
+            <img src="happy.png" alt="ARKHIEL Happy" data-name="ARKHIEL Happy" data-desc="Happy and uplifting scent." data-price="₱500">
+            <h3>ARKHIEL Happy</h3>
+            <p>Happy and uplifting scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+         <div class="product">
+            <img src="joh.png" alt="ARKHIEL Joh" data-name="ARKHIEL Johannie" data-desc="Lively and vibrant scent." data-price="₱500">
+            <h3>ARKHIEL Johannie</h3>
+            <p>Lively and vibrant scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+        <div class="product">
+            <img src="agape.png" alt="ARKHIEL Agape" data-name="ARKHIEL Agape" data-desc="Warm and loving scent." data-price="₱500">
+            <h3>ARKHIEL Agape</h3>
+            <p>Warm and loving scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+         <div class="product">
+            <img src="helios.png" alt="ARKHIEL Helios" data-name="ARKHIEL Helios" data-desc="Bright and radiant scent." data-price="₱500">
+            <h3>ARKHIEL Helios</h3>
+            <p>Bright and radiant scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+         <div class="product">
+            <img src="CALLISTA.png" alt="ARKHIEL Callista" data-name="ARKHIEL Callista" data-desc="Enchanting and elegant scent." data-price="₱500  ">
+            <h3>ARKHIEL Callista</h3>
+            <p>Enchanting and elegant scent.</p>
+            <p><strong>Price: ₱500</strong></p>
+           
+        </div>
+     
+        
+        <div id="imgModal" class="modal">
+            <span class="close">&times;</span>
+
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+
+        <div class="modal-box">
+            <img class="modal-content" id="imgPreview">
+
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <h3 id="modalPrice"></h3>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+        <div id="cartPanel" class="cart-panel">
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">Total: ₱<span id="cartTotal">0</span></div>
+         <button class="checkout-btn">Checkout</button>
+
+        </div>
+    </div>
+</section>
+</main>
+
+
+<footer>
+    <p>© 2026 ARKHIEL Scents</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

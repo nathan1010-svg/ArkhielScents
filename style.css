@@ -1,0 +1,405 @@
+body {
+    background-color: #010308;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+header {
+    background-image: url('/images/toplogo5.jpg');
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #ffffff;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    border: 2px solid #e9e9e9;
+    padding: 8px 15px;
+    border-radius: 20px;
+        
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.20);
+    transition: 0.7s;
+    background-color: white;
+}
+
+p {
+    line-height: 1.8;    
+    margin-bottom: 40px; 
+}
+
+main {
+    padding: 60px 10px;
+  
+}
+.home-section img{
+    border: 2px solid #ffffff;  
+}
+  
+.home-section h2,.home-section p{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.home-section h4{
+    font-size: 60px;
+    color: #ffffff;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.home img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: #e9e9e9 solid 2px;
+    border-radius: 30%;
+    margin: 0 15px;
+}
+
+.home-item {
+    margin-top: 100px;
+    display: flex;
+    width: max-content;
+    animation:scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+    
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product:hover {
+    transform: scale(1.09);
+    transition: 0.6s;
+    background-color: rgb(129, 126, 126);
+    color: rgb(12, 12, 12);
+   
+
+}
+
+
+.product {
+    background-color: #1c1c1c;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+
+.product img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: rgb(140, 148, 160);
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.product img:hover {
+    opacity: 0.8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    
+}
+.modal-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 5%;
+}
+
+.modal-content {
+   max-width: 400px;
+    border-radius: 15px;
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-info {
+    color: white;
+    max-width: 300px;
+}
+
+.modal-info h2 {
+    margin-bottom: 10px;
+}
+
+.modal-info p {
+    color: #ccc;
+}
+.modal-info h3 {
+    margin-top: 10px;
+    color: gold;
+}
+
+.buy-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: gold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.cart-panel {
+    position: fixed;
+    right: -350px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.cart-panel.active {
+    right: 0;
+}
+
+.close-cart {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+}
+.close-cart:hover {
+    background: darkred;
+}
+
+
+.cart-panel h2 {
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+}
+
+.cart-controls {
+    margin-top: 5px;
+}
+.cart-controls button {
+    margin-right: 5px;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-controls button:hover {
+    background: gold;
+    color: black;
+}
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.cart-btn {
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+.cart-btn:hover {
+    background: rgb(253, 253, 253);
+    color: black;
+}   
+
+
+.about {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    border: 2px solid #ffffff;
+    padding: 30px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    
+}
+
+.about-me {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    border: 2px solid #ffffff;
+    padding: 30px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    
+}
+
+
+.about-me img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.about-me:hover {
+    transform: scale(1.09);
+    transition: 0.6s;
+    background-color: rgb(141, 141, 141);
+    color:black;
+}
+
+.about-section{
+    margin-top: 10px;
+
+}
+.about h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    text-align: center;
+    
+}
+.about-section p {
+    text-align: justify;
+    
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-section {
+    font-family: sans-serif;
+    border: 2px solid #ffffff;
+    padding: 100px;
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.contact-info p{
+   line-height: 5px;
+    
+}
+
+.social-links a {
+    color: rgb(5, 76, 134);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    color: rgb(226, 158, 10);
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 10px;
+    color: gray;
+    margin-top: 13%;
+    margin: auto;
+
+}
